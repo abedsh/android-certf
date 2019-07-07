@@ -9,10 +9,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.SectionsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
+                <!--App is not indexable by Google Search; consider-->
+                <!--adding at least one Activity with an ACTION-VIEW intent-filler.-->
+                <!--See issue explanation for more details.-->
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
