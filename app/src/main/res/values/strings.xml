@@ -1,3 +1,45 @@
 <resources>
     <string name="app_name">AndroidCertf</string>
+    <string-array name="sections">
+        <item>Android core</item>
+        <item>User interface</item>
+        <item>Data management</item>
+        <item>Table Debugging</item>
+        <item>Testing</item>
+    </string-array>
+    <string-array name="androidCore">
+        <item>Android Developers Toasts</item>
+        <item>Android Developers Snackbar</item>
+    </string-array>
+
+    <string name="sectionsJson">{
+        \"sectionBeans\":[{\"title\": \"Android Core\",
+        \"childList\":[{\"title\":\"Toasts\",
+        \"activityName\":\"ActivityToast\"
+        },{\"title\":\"SnackBars\",
+        \"activityName\":\"ActivitySnackBar\"
+        }]
+
+
+
+
+        },
+
+
+
+
+        {\"title\": \"User Interface\",
+        \"childList\":[{\"title\":\"Activities and intents\",
+        \"activityName\":\"ActivityActivititesIntents\"
+        }]}
+
+
+
+
+        ]
+
+        }
+    </string>
+
+
 </resources>
