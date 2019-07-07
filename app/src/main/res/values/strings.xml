@@ -12,7 +12,34 @@
         <item>Android Developers Snackbar</item>
     </string-array>
 
-    <string name="sectionsJson">{"title":{"translations":[{"translatedText":"Bonjour tout le monde"}]}}</string>
+    <string name="sectionsJson">{
+        \"sectionBeans\":[{\"title\": \"Android Core\",
+        \"childList\":[{\"title\":\"Toasts\",
+        \"activityName\":\"ActivityToast\"
+        },{\"title\":\"SnackBars\",
+        \"activityName\":\"ActivitySnackBar\"
+        }]
+
+
+
+
+        },
+
+
+
+
+        {\"title\": \"User Interface\",
+        \"childList\":[{\"title\":\"Activities and intents\",
+        \"activityName\":\"ActivityActivititesIntents\"
+        }]}
+
+
+
+
+        ]
+
+        }
+    </string>
 
 
 </resources>
