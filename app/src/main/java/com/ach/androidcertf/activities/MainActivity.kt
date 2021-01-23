@@ -1,12 +1,12 @@
 package com.ach.androidcertf.activities
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.ach.androidcertf.fragments.FragmentList
 import com.ach.androidcertf.models.SectionBean
 import com.ach.androidcertf.models.SectionBeanResponse
 import com.google.gson.Gson
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import com.ach.androidcertf.R
 import com.ach.androidcertf.utils.AppUtils
 import java.lang.Exception
@@ -14,6 +14,14 @@ import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
 
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) { // the ? is to allow a null saveInstanceState https://kotlinlang.org/docs/reference/null-safety.html
         super.onCreate(savedInstanceState)

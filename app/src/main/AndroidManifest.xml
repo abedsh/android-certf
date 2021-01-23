@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.ach.androidcertf">
+    package="com.ach.androidcertf">
 
     <application
-            android:allowBackup="true"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:roundIcon="@mipmap/ic_launcher_round"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme">
+        android:name=".AndroidCertfApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
         <activity android:name=".activities.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
                 <!--App is not indexable by Google Search; consider-->
                 <!--adding at least one Activity with an ACTION-VIEW intent-filler.-->
                 <!--See issue explanation for more details.-->
                 <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <!-- Branch URI scheme -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:host="open"
+                    android:scheme="https" />
+            </intent-filter>
+
+            <!-- Branch init -->
+            <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_ehUGLRLUpXyXSjIqQTIo5lpgvslUJ2Y3" />
+            <!-- Branch testing (TestMode "true" to simulate fresh installs on dev environment) -->
+            <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />
         </activity>
-        <activity android:name=".activities.ActivityToast"
-            android:parentActivityName=".activities.MainActivity"/>
+        <activity
+            android:name=".activities.ActivityToast"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.ActivitySnackBar"
+            android:parentActivityName=".activities.MainActivity" />
     </application>
 
 </manifest>

@@ -44,6 +44,7 @@
     <!--String values related to Android Core/Toast section-->
     <string name="show_toast_button">Show Toast</string>
     <string name="show_custom_toast_button">Show Custom Toast</string>
+    <string name="show_snack_bar">Show snack bar</string>
 
 
 </resources>

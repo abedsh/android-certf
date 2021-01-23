@@ -1,10 +1,6 @@
 package com.ach.androidcertf.activities;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,9 +8,18 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
 import com.ach.androidcertf.R;
 
 public class ActivityToast extends AppCompatActivity implements View.OnClickListener {
+
+    public static final int LENGTH_SHORT = 0;
+
+
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

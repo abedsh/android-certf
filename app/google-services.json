@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1035542387587",
+    "firebase_url": "https://android-cert-913bd.firebaseio.com",
+    "project_id": "android-cert-913bd",
+    "storage_bucket": "android-cert-913bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035542387587:android:979d97a6edd4391a96f4b6",
+        "android_client_info": {
+          "package_name": "com.ach.androidcertf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035542387587-1sj5np71hrpb24kls3s7118b9b9r2njr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOaQE-jHZWFT615ystMRynUV-2Libap9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035542387587-1sj5np71hrpb24kls3s7118b9b9r2njr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
