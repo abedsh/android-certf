@@ -16,11 +16,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
+        // test commit
     }
 
     override fun onStart() {
         super.onStart()
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) { // the ? is to allow a null saveInstanceState https://kotlinlang.org/docs/reference/null-safety.html
