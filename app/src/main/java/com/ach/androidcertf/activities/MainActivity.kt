@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
-        // test commit
+        // test commit on dev
     }
 
     override fun onStart() {
